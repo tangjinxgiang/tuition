@@ -1,0 +1,645 @@
+/*  清除默认样式*/
+html,body{
+  height: 100%;
+  font-size:16px;
+}
+body{
+  margin: 0;
+  padding: 0;
+   -webkit-tap-highlight-color:rgba(255,255,255,0);
+   background:#ebebeb;
+  -webkit-overflow-scrolling: touch;
+}
+ul,li,p{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+i,em{
+  font-style:normal;
+}
+a{
+  text-decoration: none;
+}
+/* 登录页面 */
+.bg1{
+  background: #fff;
+}
+.login_logo{
+  text-align: center;
+  background: #fff;
+  height: 25%;
+  padding-top: 4%;
+  height: 120px;
+  margin-bottom: 3%;
+}
+ .login_logo>span{
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background: url('../image/logo.png') no-repeat;
+  background-size: 100% 100%;
+}
+.login_logo>img{
+  width: 120px;
+  height: 120px;
+  margin-top:6%;
+}
+
+.login_data{
+  height: 35%;
+  height: 65%;
+  background: #fff;
+}
+.weui-cell{
+  padding: 15px;
+}
+.weui-cell::before{
+  margin-right: 15px;
+}
+.weui-cell-last::after{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  transform-origin: 0 0;
+  transform: scaleY(.5);
+  left: 15px;
+  z-index: 2;
+  margin-right: 15px;
+}
+.login_data>a{
+  margin:30px;
+  margin: 15px 30px;
+}
+.login_footer{
+  width:100%;
+  height: 35%;
+  background: url(../image/school1.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+ .login_footer::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background: linear-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255, 0.1));
+}
+
+/* 首页 */
+.home_logo{
+  width: 100%;
+  height: 30%;
+  background: url(../image/school2.jpg) no-repeat;
+  background-size:100% 100%;
+  position: relative;
+}
+.home_logo::after{
+ content: '';
+ text-align: center;
+ font-size: 25px;
+ color:rgba(255, 255, 255, 0.3);
+ line-height: 60px;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top:0;
+ left:0;
+ background: linear-gradient(rgba(255, 255, 255,0.7), rgba(255, 255, 255, 0.1));
+}
+.home_logo+ul{}
+.home_logo+ul>li{
+  width: calc(100% - 30px);
+  line-height: 55px;
+  padding: 0 15px;
+  background: #fff;
+  border-bottom:1px solid #f2f2f2;
+  display: flex;
+  position: relative;
+}
+.home_logo+ul>li:active:not(:first-child){
+  background: rgba(0,0,0,0.1);
+
+}
+
+.home_logo+ul>li:first-child{
+  margin-bottom: 15px;
+  border-bottom: none;
+  display: flex;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+  line-height: 55px;
+}
+.home_logo+ul>li:nth-of-type(1)>span{
+  flex:1;
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+.home_logo+ul>li.many{
+    line-height:35px;
+}
+.home_logo+ul>li.many>span{
+   flex:none;
+   margin: 10px 1%;
+}
+.home_logo+ul>li:nth-of-type(1)>span:last-child{
+  padding-left: 10px;
+  border-left: 1px solid #eee;
+}
+.home_logo+ul>li:nth-of-type(1)>span>i{
+  flex: 1;
+  text-align: center;
+}
+.home_logo+ul>li:nth-of-type(2)>p{
+  background: #f9b362;
+}
+.home_logo+ul>li:nth-of-type(3)>p{
+  background: #54cbf6;
+}
+.home_logo+ul>li:nth-of-type(4)>p{
+  background: #80dfc1;
+}
+.home_logo+ul>li:nth-of-type(5)>p{
+  background: #b880df;
+}
+.home_logo+ul>li:nth-of-type(6)>p{
+  background:rgb(255, 98, 98);
+}
+.home_logo+ul>li>p{
+  width:40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin:auto 0;
+}
+
+.home_logo+ul>li>p>i{
+  color: #fff;
+  font-size: 24px;
+}
+.home_logo+ul>li>span{
+  margin-left: 10px;
+  font-size: 16px;
+}
+.home_logo+ul>li>.icon-you{
+  color:rgb(195, 192, 192);
+  flex: 2;
+  text-align: right;
+  font-size: 18px;
+}
+
+/*  我要缴费*/
+.pay_list{
+  height: 100%;
+}
+.pay_list>li{
+  width:calc(100% - 40px);
+  background: #fff;
+  padding: 16px 20px 10px;
+  /* display: flex; */
+  margin-bottom: 5%;
+}
+.pay_list>li>.pay_list_left{
+  flex: 2;
+}
+.pay_list>li>.pay_list_left>span{
+  color:#666666;
+  font-size: 17px;
+  display: block;
+  padding: 10px 0;
+}
+.pay_list>li>.pay_list_left>span:first-of-type{
+  white-space: nowrap;
+  overflow: scroll;
+}
+.pay_list>li>.pay_list_left>span.detail{
+  display: flex;
+  align-items: center;
+}
+.pay_list>li>.pay_list_left>span.detail>em{
+  flex:4;
+}
+.pay_list>li>.pay_list_left>span.detail>i{
+  flex:1;
+
+}
+.pay_list>li>.pay_list_left>span.total{
+  display: flex;
+}
+.pay_list>li>.pay_list_left>span.total>em{
+  /* padding-left: 15px; */
+  flex:2;
+}
+.pay_list>li>.pay_list_left>span.total>i{
+  /*flex: 1.1;*/
+	margin-right: 22%;
+}
+/* .pay_list>li>.pay_list_left>span:last-of-type{
+  display: flex;
+  align-items:center;
+}
+:not(#tab2)>.pay_list>li>.pay_list_left>span:last-of-type:active{
+  background:rgba(0, 0, 0, 0.1);
+}
+.pay_list>li>.pay_list_left>span:last-of-type>i{
+  width: 64%;
+}
+.pay_list>li>.pay_list_left>span:last-of-type>img{
+  width:10px;
+  height: 14px;
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+.tr90{
+  transform: rotate(90deg)!important;
+} */
+.pay_list>li>.pay_list_left>span.detail>i:last-child{
+  text-align: center;
+  padding-right: 2%;
+}
+.pay_list>li>.pay_list_left>span.detail>i>img{
+  width:10px;
+  height: 14px;
+  vertical-align: middle;
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+.tr90{
+  transform: rotate(90deg)!important;
+}
+.pay_list>li>.pay_list_left>span>i{
+  margin-left: 5px;
+}
+/*  收费明细*/
+.sall_list{
+  /* display: none; */
+}
+.pay_list>li>.pay_list_left>.pay_list_con{
+  left: 28%;
+  margin-top: 0;
+  left: 0;
+  font-size: 16px;
+  color:#888;
+  display: none;
+}
+.pay_list>li>.pay_list_left>.pay_list_con label:active{
+  background: #fff;
+}
+.pay_list>li>.pay_list_left>.pay_list_con label:not(.xiugai){
+  background: rgba(0,0,0,0.1);
+}
+.pay_list>li>.pay_list_left>.pay_list_con label.xiugai em::after{
+  content: '可修改金额';
+  font-size: 12px;
+  padding-right: 10px;
+  text-align: right;
+  flex: 1;
+  color:#cf8d8d;
+}
+.weui-cell:before{
+  width: 100%;
+  left: 0 !important;
+
+}
+.weui-cell__bd:first-child{
+  display: flex;
+}
+.weui-cell__bd:first-child>em{
+  flex:1.5;
+  display: flex;
+  align-items: center;
+}
+/* 收费明细 */
+.pay_list_left ul>li{
+  padding: 15px;
+  display: flex;
+}
+.pay_list_left ul>li>em{
+  flex:2;
+}
+.pay_list_left ul>li>em.xiugai1{
+  display: flex;
+  align-items: center;
+}
+.pay_list_left ul>li>em.xiugai1::after{
+  content: '可修改金额';
+  font-size: 12px;
+  padding-right: 10px;
+  text-align: right;
+  flex: 1;
+  color: #cf8d8d;
+}
+.pay_list_left ul>li>input{
+  width: 25%;
+  /* margin-right: 20%; *************/
+  outline: none;
+  font-size: 16px;
+  border:0;
+  color:#888;
+  text-align: right;
+}
+.pay_list_left ul>li>input:disabled{
+  color:#000;
+  background: #fff;
+}
+.pay_list_left>ul>li>p{
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8%;
+}
+.pay_list_left>ul>li>p>i{
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #09bb07;
+  font-size: 22px;
+}
+.pay_list_left>ul>li>p>i.border{
+    border: 1px solid #cbc8c8;
+    background: #eee;
+}
+[class*=" weui-icon-"]:before, [class^=weui-icon-]:before{
+  margin: 0;
+}
+/* 收费明细 */
+.weui-cell__bd:first-child>span{
+  text-align: end;
+  padding-right: 25px;
+}
+.pay_list>li>.pay_list_left>.pay_list_btn{
+  width: 100%;
+  text-align: right;
+  font-size: 0;
+  margin-left:20px;
+}
+.pay_list>li>.pay_list_left>.pay_list_btn>a{
+  padding: 2px 25px;
+  margin: 10px 20px 0 0;
+}
+
+
+.pay_list>li>.pay_list_right{
+  flex:1;
+  padding: 5px 5% 0 0;
+  text-align: right;
+}
+
+.pay_list>li>.pay_list_right>a:active{
+  background:#00cc00;
+}
+/* 我的订单*/
+.bg{
+  background: #fff;
+}
+.weui-navbar{
+  position: static;
+  margin-bottom: 5%;
+}
+.weui-navbar+.weui-tab__bd {
+  padding-top: 0;
+  margin-top: 5%;
+  overflow: scroll;
+  height: 87%;
+}
+.weui-navbar__item.weui-bar__item--on{
+  color:#00cc00 !important;
+  background: #fff;
+}
+.weui-tab__bd{
+  height: auto;
+}
+.weui-navbar__item{
+  background: #fff;
+}
+.weui-navbar__item.weui-bar__item--on::before{
+  content: '';
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 2px;
+  background: #00cc00;
+}
+.weui-navbar__item:after{
+  border:0;
+}
+.weui-navbar:after{
+  border: none;
+}
+.pay_list>li>.pay_list_right>span{
+  color:#00cc00;
+  letter-spacing: 0;
+}
+.pay_list>li>.pay_list_right>i{
+  letter-spacing: 0;
+}
+.weui-msg__desc{
+  text-align: left;
+  margin-top: 10%;
+}
+.weui-msg__desc>span{
+  display: block;
+  padding-left:32%;
+  margin: 5px 0;
+}
+.weui-msg__desc>span>i{
+  margin-left: 5px;
+}
+/* 已支付 */
+.pay_list_left>ul{
+  /* width: 120%; */
+  /* box-shadow: 1px 1px 10px #888 inset; */
+  /* border-radius: 8px; */
+}
+.pay_list_left>ul>li{
+  display: flex;
+  color: #888;
+  padding: 10px 0;
+}
+.pay_list_left>ul>li{
+  /* border: 1px solid #dad7d7; */
+}
+.pay_list_left>ul>li:not(:last-of-type){
+  border-bottom: 0;
+}
+.pay_list_left>ul>li>span{
+  flex:1;
+  text-align: left;
+  padding-left: 5%;
+}
+.pay_list_left>ul>li>i{
+  flex:1;
+  text-align: right;
+  padding-right: 5%;
+}
+#tab2 .pay_list>li>.pay_list_left>.pay_list_con label.xiugai em::after{
+  display: none;
+}
+#tab2 .weui-cells_checkbox .weui-cell__hd {
+  visibility:inherit!important;
+}
+#tab2 .pay_list>li>.pay_list_left>.pay_list_con label:not(.xiugai){
+  background: #fff;
+}
+/*  我的信息*/
+.info_list{}
+.info_list>ul{
+  padding-left: 15px;
+}
+.info_list>ul>li{
+  line-height: 55px;
+  width: calc(100% - 10px);
+  padding-left: 10px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  color: #666;
+  display: flex;
+}
+.info_list>ul>li:nth-of-type(5),.info_list>ul>li:nth-of-type(7){
+  border:0;
+  margin-bottom: 5%;
+}
+.info_list>ul>li:nth-of-type(5)::after,.info_list>ul>li:nth-of-type(7)::after{
+  border:0;
+}
+.info_list>ul>li::after{
+  content: '';
+  position: absolute;
+  left: -15px;
+  top:0;
+  width:15px;
+  height: 55px;
+  background:#fff;
+  border-bottom: 1px solid #fff;
+}
+.info_list>ul>li>span{
+  color:#999;
+  flex:6;
+  text-align: right;
+}
+.info_list>ul>li>i{
+  flex: 1;
+  text-align: center;
+  color:#999;
+}
+.site{
+  background: #fff;
+  padding: 15px 0 15px 25px;
+  display: flex;
+  color: #666;
+}
+.site>span{
+  flex:6;
+  text-indent: 2em;
+  text-align:justify;
+  color:#999;
+}
+.site>i{
+  flex:1;
+  text-align: center;
+  color:#999;
+}
+
+/* 教职工首页 */
+.teacher_title{
+  width: 94%;
+  padding: 0 3% 5%;
+  background: #fff;
+  font-size: 0;
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+}
+.teacher_title>a{
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  margin-top: 10%;
+  text-align: center;
+}
+.teacher_title>a>i{
+  display:block;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  line-height:60px;
+  text-align: center;
+  background: rgb(251, 104, 88);
+  border-radius: 50%;
+  font-size:40px;
+  color:#fff;
+}
+.teacher_title>a:nth-child(2)>i{
+  background: rgb(49,177,56);
+}
+.teacher_title>a>em{
+  font-size: 16px;
+  color:rgb(161, 161, 161);
+  margin-top:6px;
+  display: inline-block;
+}
+.teacher_box{
+  background: #fff;
+  margin-top: 2%;
+  padding:2% 5% 4%;
+}
+.teacher_box>.box_top{
+  height: 80px;
+  position: relative;
+}
+.teacher_box>.box_top::before{
+  content: '1';
+  position: absolute;
+  right: 0;
+  top:20%;
+  width:20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgb(180, 24, 24);
+  color: #fff;
+}
+.teacher_box>.box_top>p,.box_bottom>p{
+  font-size: 17px;
+  font-weight: 600;
+  padding: 4% 0 0;
+  color:rgb(139, 138, 136);
+}
+.teacher_box>.box_top>span,.box_bottom>span{
+  line-height: 20px;
+  color:rgb(194, 195, 200);
+  font-size: 15px;
+  display: flex;
+  padding: 4% 0;
+  text-indent: 1em;
+}
+.teacher_box>.box_top>span>i{
+  flex: 1;
+  text-align: right;
+}
+.apply{
+  width: 100%;
+  height: 100%;
+}
+.weui-toast.weui-toast--visible{
+  margin: 0 auto;
+}
+/* 弹出框 */
+.weui-dialog__bd{
+  word-break:normal;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我的订单</title>
+  <script src="js/zepto.js"></script>
+  <link href="css/weui.min.css" rel="stylesheet" />
+  <link href="css/demos.css" rel="stylesheet" />
+  <link href="css/jquery-weui.min.css" rel="stylesheet" />
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/jquery-weui.min.js"></script>
+  <script src="js/fastclick.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="js/index.js"></script>
+  <style type="text/css">
+  		.order .pay_list>li>.pay_list_left>span.detail>em{
+  			flex: 6;
+  		}
+  		.order .pay_list>li>.pay_list_left>span.detail>i{
+  			flex: 1;
+  		}
+  		.order .pay_list_left ul>li>em{
+  			flex: 1;
+  		}
+  		.order .pay_list_left ul>li>input:disabled{
+  			flex: 1;
+  			padding-right: 6%;
+  		}
+  		.order .pay_list>li>.pay_list_left>span.total>em{
+  			flex: 2;
+  		}
+  		.order .pay_list>li>.pay_list_left>span.total>i{
+  			flex: 2;
+    		text-align: end;
+    		padding-right: 6%;
+    		margin: 0;
+  		}
+  		.order .pay_list>li>.pay_list_left>.pay_list_btn{
+  			margin-left: 0;
+  		}
+  		.order .detail i:first-of-type{
+  		  flex: 2.2 !important;
+    		text-align: end;
+  		}
+  </style>
+</head>
+<body>
+  <div class="weui-tab">
+    <div class="weui-navbar">
+      <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+        未支付
+      </a>
+      <a class="weui-navbar__item" href="#tab2">
+        已支付
+      </a>
+    </div>
+    <div class="weui-tab__bd order">
+      <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+        <ul class="pay_list">
+          <li>
+            <div class="pay_list_left">
+              <span>收费单号:<i>20180809WX1600101001085342</i></span>
+              <span>收费年度:<i>2018</i>年</span>
+              <span class="detail"><em>收费明细:</em><i>金额(元)</i><i><img class="tr90" src="image/right.png" alt=""></i></span>
+              <ul class="sall_list">
+                <li>
+                  <em>学费</em>
+                  <input onchange="console.log(this.value);" type="number" value="6666.00" disabled>
+                </li>
+                <li>
+                  <em>住宿费</em>
+                  <input type="number" value="0.01" disabled>
+                </li>
+                <li>
+                  <em>服装费</em>
+                  <input type="number" value="0.01" disabled>
+                </li>
+                <!--<li>
+                  <em>教材费</em>
+                  <input type="number" value="800.00" disabled>
+                </li>
+                <li>
+                  <em>医疗保险费</em>
+                  <input type="number" value="120.00" disabled>
+                </li>-->
+              </ul>
+              <span class="total"><em>缴费合计:</em><i>0</i></span>
+              <div class="pay_list_btn">
+              		<a href="#" class="weui-btn weui-btn_mini weui-btn_plain-primary">删除订单</a>
+                  <a href="javascript:void(0);" class="weui-btn weui-btn_mini weui-btn_primary">缴费</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="tab2" class="weui-tab__bd-item">
+        <ul class="pay_list">
+          <li>
+            <div class="pay_list_left">
+              <span>收费单号:<i>20180809WX1600101001085342</i></span>
+              <span>收费年度:<i>2018</i>年</span>
+              <span class="detail"><em>收费明细:</em><i>金额(元)</i><i><img class="tr90" src="image/right.png" alt=""></i></span>
+               <ul class="sall_list">
+                <li>
+                  <em>学费</em>
+                  <input type="number" value="6666.00" disabled>
+                </li>
+                <li>
+                  <em>住宿费</em>
+                  <input type="number" value="1200.00" disabled>
+                </li>
+                <li>
+                  <em>服装费</em>
+                  <input type="number" value="120.00" disabled>
+                </li>
+                <li>
+                  <em>教材费</em>
+                  <input type="number" value="800.00" disabled>
+                </li>
+                <li>
+                  <em>医疗保险费</em>
+                  <input type="number" value="120.00" disabled>
+                </li>
+              </ul>
+              <span class="total"><em>缴费合计:</em><i>0</i></span>
+            </div>
+            <div class="pay_list_right">
+              <span>交易成功</span>
+              <i class="weui-icon-success"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  (function(){
+    $('.weui-navbar__item').click();
+  })()
+
+  </script>
+</body>
+</html>

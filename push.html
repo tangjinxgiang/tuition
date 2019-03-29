@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name = "format-detection" content = "telephone=no">
+  <title>生成订单</title>
+  <script src="js/zepto.js"></script>
+  <link href="css/weui.min.css" rel="stylesheet" />
+  <link href="css/demos.css" rel="stylesheet" />
+  <link href="css/jquery-weui.min.css" rel="stylesheet" />
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/jquery-weui.min.js"></script>
+  <script src="js/fastclick.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <style media="screen">
+    .weui-msg__desc{
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body class="bg" ontouchstart="">
+  <div class="weui-msg">
+  <div class="weui-msg__icon-area"><i class="weui-icon-success weui-icon_msg"></i></div>
+  <div class="weui-msg__text-area">
+    <h2 class="weui-msg__title">订单提交成功</h2>
+    <p class="weui-msg__desc">
+      <span>收费单号:<i>20180215001</i></span>
+      <span>收费年度:<i>2018</i>年</span>
+      <span>收费金额:<i>8906</i>.00元</span>
+    </p>
+  </div>
+  <div class="weui-msg__opr-area">
+    <p class="weui-btn-area">
+      <a href="javascript:;" class="weui-btn weui-btn_primary">支付</a>
+      <a href="javaScript:;" class="weui-btn weui-btn_default">取消</a>
+    </p>
+  </div>
+  <div class="weui-msg__extra-area">
+    <div class="weui-footer">
+      <p class="weui-footer__links">
+        <!-- <a href="www.hhmtsoft.com" class="weui-footer__link">铭图软件</a> -->
+      </p>
+      <p class="weui-footer__text">Copyright © 2015-2045 mtsoft</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function(){
+    $('.weui-btn.weui-btn_primary').click(function(event) {
+      $.toast("支付成功");
+      setTimeout(function(){
+        window.history.go(-1);
+      },1500);
+    });
+    $('.weui-btn.weui-btn_default').click(function(event) {
+      $.toast("取消操作");
+      setTimeout(function(){
+        window.history.go(-1);
+      },1500);
+    });
+  })
+</script>
+</body>
+</html>
